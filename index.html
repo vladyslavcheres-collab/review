@@ -84,90 +84,145 @@
   <div class="stat-cell">
     <div class="stat-num">3 <span>→ 7</span></div>
     <div class="stat-label">Фахівців у команді</div>
-    <div class="stat-detail">+4 успішних онбординги</div><!DOCTYPE html>
-<html lang="uk">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Performance Review — 7 місяців</title>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root {
-    --bg: #F5F3EE; --surface: #FFFFFF; --surface2: #EDEBE5;
-    --text: #1A1916; --muted: #6B6860; --hint: #A8A59E;
-    --border: rgba(26,25,22,0.1); --teal: #0F6E56;
-    --teal-bg: #E1F5EE; --teal-text: #085041;
-    --amber-bg: #FAEEDA; --amber-text: #633806;
-    --purple-bg: #EEEDFE; --purple-text: #3C3489;
-    --blue-bg: #E6F1FB; --blue-text: #0C447C;
-    --coral-bg: #FAECE7; --coral-text: #993C1D;
-    --green-bg: #EAF3DE; --green-text: #3B6D11;
-  }
-  body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
-  .hero { padding: 72px 64px 56px; border-bottom: 1px solid var(--border); position: relative; overflow: hidden; }
-  .hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(29,158,117,0.08) 0%, transparent 70%); pointer-events: none; }
-  .hero-eyebrow { font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
-  .hero-title { font-family: 'Instrument Serif', serif; font-size: clamp(42px, 6vw, 72px); font-weight: 400; line-height: 1.05; max-width: 700px; margin-bottom: 20px; }
-  .hero-title em { font-style: italic; color: var(--teal); }
-  .hero-sub { font-size: 16px; color: var(--muted); font-weight: 300; }
-  .stats-bar { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--border); }
-  .stat-cell { padding: 32px 40px; border-right: 1px solid var(--border); }
-  .stat-cell:last-child { border-right: none; }
-  .stat-num { font-family: 'Instrument Serif', serif; font-size: 40px; line-height: 1; margin-bottom: 8px; }
-  .stat-num span { color: var(--teal); }
-  .stat-label { font-size: 13px; color: var(--muted); }
-  .stat-detail { font-size: 11px; color: var(--hint); margin-top: 4px; }
-  .tabs-nav { display: flex; border-bottom: 1px solid var(--border); padding: 0 64px; }
-  .tab-btn { padding: 18px 0; margin-right: 36px; font-size: 14px; color: var(--muted); background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; transition: color 0.2s, border-color 0.2s; font-family: 'DM Sans', sans-serif; }
-  .tab-btn:hover { color: var(--text); }
-  .tab-btn.active { color: var(--text); font-weight: 500; border-bottom-color: var(--text); }
-  .tab-panel { display: none; padding: 56px 64px; }
-  .tab-panel.active { display: block; }
-  .retro-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .col-title { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
-  .col-dot { width: 6px; height: 6px; border-radius: 50%; }
-  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 22px; margin-bottom: 12px; transition: transform 0.15s, box-shadow 0.15s; }
-  .card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(26,25,22,0.07); }
-  .tag { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 5px; margin-bottom: 10px; }
-  .card-title { font-size: 14px; font-weight: 500; margin-bottom: 7px; }
-  .card-body { font-size: 13px; color: var(--muted); line-height: 1.6; }
-  .card-metric { display: flex; align-items: center; gap: 10px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
-  .metric-big { font-family: 'Instrument Serif', serif; font-size: 28px; color: var(--teal); line-height: 1; }
-  .metric-label { font-size: 12px; color: var(--muted); }
-  .roadmap-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  .rcard { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 28px 30px; transition: transform 0.15s, box-shadow 0.15s; }
-  .rcard:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(26,25,22,0.07); }
-  .rcard-icon { width: 40px; height: 40px; border-radius: 10px; background: var(--surface2); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; font-size: 20px; }
-  .rcard-title { font-size: 16px; font-weight: 500; margin-bottom: 8px; }
-  .rcard-desc { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
-  .rcard-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-  .rcard-list li { font-size: 13px; color: var(--muted); display: flex; gap: 10px; align-items: flex-start; }
-  .rcard-list li::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--hint); flex-shrink: 0; margin-top: 6px; }
-  .footer { padding: 28px 64px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
-  .footer-left, .footer-right { font-size: 13px; color: var(--hint); }
-  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
-  .card, .rcard { animation: fadeUp 0.4s ease both; }
-  @media (max-width: 900px) {
-    .hero { padding: 48px 24px 40px; }
-    .stats-bar { grid-template-columns: 1fr 1fr; }
-    .stat-cell { border-right: none; border-bottom: 1px solid var(--border); }
-    .tabs-nav, .tab-panel, .footer { padding-left: 24px; padding-right: 24px; }
-    .retro-grid, .roadmap-grid { grid-template-columns: 1fr; }
-    .footer { flex-direction: column; gap: 8px; }
-  }
-</style>
-</head>
-<body>
-
-<header class="hero">
-  <p class="hero-eyebrow">Performance review · 2025–2026</p>
-  <h1 class="hero-title">7 місяців <em>зростання</em><br>та плани на 6 вперед</h1>
-  <p class="hero-sub">Команда · Якість · Продукт · Роадмап</p>
-</header>
-
-<div class="stats-bar">
-  <div class="stat-cell">
-    <div class="stat-num">3 <span>→ 7</span></div>
-    <div class="stat-label">Фахівців у команді</div>
     <div class="stat-detail">+4 успішних онбординги</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-num"><span>×3</span></div>
+    <div class="stat-label">Менше негативу в Meta</div>
+    <div class="stat-detail">При тому ж обсязі спенду</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-num" style="font-size:28px;padding-top:6px">High</div>
+    <div class="stat-label">Engagement survey</div>
+    <div class="stat-detail">Команда залучена та лояльна</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-num" style="font-size:28px;padding-top:6px">Live</div>
+    <div class="stat-label">PQ Score система</div>
+    <div class="stat-detail">Щотижнева звітність</div>
+  </div>
+</div>
+
+<nav class="tabs-nav">
+  <button class="tab-btn active" onclick="switchTab('retro',this)">Ретроспектива · 7 місяців</button>
+  <button class="tab-btn" onclick="switchTab('roadmap',this)">Роадмап · 6 місяців</button>
+</nav>
+
+<div id="retro" class="tab-panel active">
+  <div class="retro-grid">
+    <div>
+      <div class="col-title"><span class="col-dot" style="background:#1D9E75"></span>Команда & Менеджмент</div>
+      <div class="card">
+        <span class="tag" style="background:var(--teal-bg);color:var(--teal-text)">Scale</span>
+        <div class="card-title">Масштабування команди</div>
+        <div class="card-body">Збільшив команду з 3 до 7 фахівців. Успішно онбордив 4 нових співробітників без просідання якості роботи.</div>
+      </div>
+      <div class="card">
+        <span class="tag" style="background:var(--blue-bg);color:var(--blue-text)">Engagement</span>
+        <div class="card-title">Висока залученість</div>
+        <div class="card-body">Результати опитування підтвердили: команда лояльна, вмотивована та залучена. Покращено розподіл часу та пріоритетів.</div>
+      </div>
+      <div class="card">
+        <span class="tag" style="background:var(--coral-bg);color:var(--coral-text)">HR</span>
+        <div class="card-title">Складний PIP-кейс</div>
+        <div class="card-body">Провів процедуру звільнення Senior-спеціаліста через PIP. Регулярний нетворкінг з Pawchamp, Brighterly, Habit One.</div>
+      </div>
+    </div>
+    <div>
+      <div class="col-title"><span class="col-dot" style="background:#BA7517"></span>Якість & Процеси</div>
+      <div class="card">
+        <span class="tag" style="background:var(--amber-bg);color:var(--amber-text)">PQ Score</span>
+        <div class="card-title">Система оцінки якості</div>
+        <div class="card-body">Спільно з Мариною впровадили систему оцінки. Радикальне скорочення негативних коментарів у Meta при тому ж спенді.</div>
+        <div class="card-metric">
+          <div class="metric-big">×3</div>
+          <div class="metric-label">менше негативних<br>коментарів у Meta</div>
+        </div>
+      </div>
+      <div class="card">
+        <span class="tag" style="background:var(--amber-bg);color:var(--amber-text)">Ops</span>
+        <div class="card-title">Щотижнева звітність</div>
+        <div class="card-body">Регулярна звітність, чистка Figma від неконсистентності та фікс проблемних Base ID. Стандартизовано воркфлоу.</div>
+      </div>
+      <div class="card">
+        <span class="tag" style="background:var(--teal-bg);color:var(--teal-text)">Parenting</span>
+        <div class="card-title">Воронка Parenting</div>
+        <div class="card-body">Керував однією з найбільших та найскладніших воронок. Стабільна якість та дедлайни навіть у пікові періоди.</div>
+      </div>
+    </div>
+    <div>
+      <div class="col-title"><span class="col-dot" style="background:#7F77DD"></span>Продукт & Ініціативи</div>
+      <div class="card">
+        <span class="tag" style="background:var(--purple-bg);color:var(--purple-text)">Product</span>
+        <div class="card-title">Creobuilder</div>
+        <div class="card-body">Участь у розробці: логіка файлів, активне тестування командою та збір зворотного зв'язку для ітерацій.</div>
+      </div>
+      <div class="card">
+        <span class="tag" style="background:var(--green-bg);color:var(--green-text)">Тест</span>
+        <div class="card-title">Freepik Space & Прототипи</div>
+        <div class="card-body">Ініціював тест Freepik Space та систему прототипів SuperHigh / High / Medium. Постійний потік дрібних покращень.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="roadmap" class="tab-panel">
+  <div class="roadmap-grid">
+    <div class="rcard">
+      <div class="rcard-icon">⚡</div>
+      <div class="rcard-title">Автоматизація PQ Score</div>
+      <div class="rcard-desc">Повна автоматизація через API з підсвічуванням критичних помилок — без ручної перевірки.</div>
+      <ul class="rcard-list">
+        <li>API-інтеграція для оцінки якості креативів</li>
+        <li>Автоматичні алерти при критичних помилках</li>
+        <li>Мінімізація ручної перевірки</li>
+      </ul>
+    </div>
+    <div class="rcard">
+      <div class="rcard-icon">🌱</div>
+      <div class="rcard-title">Масштабування ініціатив</div>
+      <div class="rcard-desc">Всі учасники команди мають власні ініціативи — підтримати momentum і виростити сеньорів.</div>
+      <ul class="rcard-list">
+        <li>Культура ініціативності: keep going</li>
+        <li>Менторство та зростання сеньорів</li>
+        <li>Регулярне ревью прогресу</li>
+      </ul>
+    </div>
+    <div class="rcard">
+      <div class="rcard-icon">🔧</div>
+      <div class="rcard-title">Усунення «стоперів»</div>
+      <div class="rcard-desc">Пошук і ліквідація зон, що гальмують команду. Перший приклад — проєкт Short Drama.</div>
+      <ul class="rcard-list">
+        <li>Short Drama: зручне тегування кадрів</li>
+        <li>Заміна неефективних Figma-бордів</li>
+        <li>Швидкий пошук контенту за тегами</li>
+      </ul>
+    </div>
+    <div class="rcard">
+      <div class="rcard-icon">📚</div>
+      <div class="rcard-title">Навчання & Нетворкінг</div>
+      <div class="rcard-desc">Воркшопи для лідів та обмін досвідом з суміжними бізнесами.</div>
+      <ul class="rcard-list">
+        <li>Practical hiring workshop for Leads</li>
+        <li>Бенчмаркінг кращих практик ринку</li>
+        <li>Обмін досвідом з Pawchamp, Brighterly, Habit One</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-left">Performance Review · 7 місяців ретроспектива</div>
+  <div class="footer-right">2025 – 2026</div>
+</footer>
+
+<script>
+  function switchTab(id, btn) {
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    btn.classList.add('active');
+  }
+</script>
+</body>
+</html>
