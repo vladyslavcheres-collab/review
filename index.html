@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="uk"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;title&gt;Performance Review — 7 місяців&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>:root {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--bg: #F5F3EE; --surface: #FFFFFF; --surface2: #EDEBE5;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--text: #1A1916; --muted: #6B6860; --hint: #A8A59E;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--border: rgba(26,25,22,0.1); --teal: #0F6E56;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--teal-bg: #E1F5EE; --teal-text: #085041;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--amber-bg: #FAEEDA; --amber-text: #633806;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--purple-bg: #EEEDFE; --purple-text: #3C3489;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--blue-bg: #E6F1FB; --blue-text: #0C447C;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--coral-bg: #FAECE7; --coral-text: #993C1D;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--green-bg: #EAF3DE; --green-text: #3B6D11;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.hero { padding: 72px 64px 56px; border-bottom: 1px solid var(--border); position: relative; overflow: hidden; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(29,158,117,0.08) 0%, transparent 70%); pointer-events: none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.hero-eyebrow { font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.hero-title { font-family: 'Instrument Serif', serif; font-size: clamp(42px, 6vw, 72px); font-weight: 400; line-height: 1.05; max-width: 700px; margin-bottom: 20px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.hero-title em { font-style: italic; color: var(--teal); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.hero-sub { font-size: 16px; color: var(--muted); font-weight: 300; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.stats-bar { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--border); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.stat-cell { padding: 32px 40px; border-right: 1px solid var(--border); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.stat-cell:last-child { border-right: none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.stat-num { font-family: 'Instrument Serif', serif; font-size: 40px; line-height: 1; margin-bottom: 8px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.stat-num span { color: var(--teal); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.stat-label { font-size: 13px; color: var(--muted); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.stat-detail { font-size: 11px; color: var(--hint); margin-top: 4px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.tabs-nav { display: flex; border-bottom: 1px solid var(--border); padding: 0 64px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.tab-btn { padding: 18px 0; margin-right: 36px; font-size: 14px; color: var(--muted); background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; transition: color 0.2s, border-color 0.2s; font-family: 'DM Sans', sans-serif; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.tab-btn:hover { color: var(--text); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.tab-btn.active { color: var(--text); font-weight: 500; border-bottom-color: var(--text); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.tab-panel { display: none; padding: 56px 64px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.tab-panel.active { display: block; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.retro-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.col-title { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.col-dot { width: 6px; height: 6px; border-radius: 50%; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 22px; margin-bottom: 12px; transition: transform 0.15s, box-shadow 0.15s; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(26,25,22,0.07); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.tag { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 5px; margin-bottom: 10px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.card-title { font-size: 14px; font-weight: 500; margin-bottom: 7px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.card-body { font-size: 13px; color: var(--muted); line-height: 1.6; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.card-metric { display: flex; align-items: center; gap: 10px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.metric-big { font-family: 'Instrument Serif', serif; font-size: 28px; color: var(--teal); line-height: 1; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.metric-label { font-size: 12px; color: var(--muted); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.roadmap-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.rcard { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 28px 30px; transition: transform 0.15s, box-shadow 0.15s; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.rcard:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(26,25,22,0.07); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.rcard-icon { width: 40px; height: 40px; border-radius: 10px; background: var(--surface2); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; font-size: 20px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.rcard-title { font-size: 16px; font-weight: 500; margin-bottom: 8px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.rcard-desc { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 16px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.rcard-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.rcard-list li { font-size: 13px; color: var(--muted); display: flex; gap: 10px; align-items: flex-start; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.rcard-list li::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--hint); flex-shrink: 0; margin-top: 6px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.footer { padding: 28px 64px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.footer-left, .footer-right { font-size: 13px; color: var(--hint); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>@keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.card, .rcard { animation: fadeUp 0.4s ease both; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>@media (max-width: 900px) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.hero { padding: 48px 24px 40px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.stats-bar { grid-template-columns: 1fr 1fr; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.stat-cell { border-right: none; border-bottom: 1px solid var(--border); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.tabs-nav, .tab-panel, .footer { padding-left: 24px; padding-right: 24px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.retro-grid, .roadmap-grid { grid-template-columns: 1fr; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.footer { flex-direction: column; gap: 8px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;header class="hero"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;p class="hero-eyebrow"&gt;Performance review · 2025–2026&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;h1 class="hero-title"&gt;7 місяців &lt;em&gt;зростання&lt;/em&gt;&lt;br&gt;та плани на 6 вперед&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;p class="hero-sub"&gt;Команда · Якість · Продукт · Роадмап&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/header&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="stats-bar"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="stat-cell"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="stat-num"&gt;3 &lt;span&gt;→ 7&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="stat-label"&gt;Фахівців у команді&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="stat-detail"&gt;+4 успішних онбординги&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="stat-cell"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="stat-num"&gt;&lt;span&gt;×3&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="stat-label"&gt;Менше негативу в Meta&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="stat-detail"&gt;При тому ж обсязі спенду&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="stat-cell"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="stat-num" style="font-size:28px;padding-top:6px"&gt;High&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="stat-label"&gt;Engagement survey&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="stat-detail"&gt;Команда залучена та лояльна&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="stat-cell"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="stat-num" style="font-size:28px;padding-top:6px"&gt;Live&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="stat-label"&gt;PQ Score система&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="stat-detail"&gt;Щотижнева звітність&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;nav class="tabs-nav"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button class="tab-btn active" onclick="switchTab('retro',this)"&gt;Ретроспектива · 7 місяців&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button class="tab-btn" onclick="switchTab('roadmap',this)"&gt;Роадмап · 6 місяців&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/nav&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div id="retro" class="tab-panel active"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="retro-grid"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="col-title"&gt;&lt;span class="col-dot" style="background:#1D9E75"&gt;&lt;/span&gt;Команда &amp; Менеджмент&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="tag" style="background:var(--teal-bg);color:var(--teal-text)"&gt;Scale&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-title"&gt;Масштабування команди&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-body"&gt;Збільшив команду з 3 до 7 фахівців. Успішно онбордив 4 нових співробітників без просідання якості роботи.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="tag" style="background:var(--blue-bg);color:var(--blue-text)"&gt;Engagement&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-title"&gt;Висока залученість&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-body"&gt;Результати опитування підтвердили: команда лояльна, вмотивована та залучена. Покращено розподіл часу та пріоритетів.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="tag" style="background:var(--coral-bg);color:var(--coral-text)"&gt;HR&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-title"&gt;Складний PIP-кейс&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-body"&gt;Провів процедуру звільнення Senior-спеціаліста через PIP. Регулярний нетворкінг з Pawchamp, Brighterly, Habit One.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="col-title"&gt;&lt;span class="col-dot" style="background:#BA7517"&gt;&lt;/span&gt;Якість &amp; Процеси&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="tag" style="background:var(--amber-bg);color:var(--amber-text)"&gt;PQ Score&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-title"&gt;Система оцінки якості&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-body"&gt;Спільно з Мариною впровадили систему оцінки. Радикальне скорочення негативних коментарів у Meta при тому ж спенді.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-metric"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="metric-big"&gt;×3&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="metric-label"&gt;менше негативних&lt;br&gt;коментарів у Meta&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="tag" style="background:var(--amber-bg);color:var(--amber-text)"&gt;Ops&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-title"&gt;Щотижнева звітність&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-body"&gt;Регулярна звітність, чистка Figma від неконсистентності та фікс проблемних Base ID. Стандартизовано воркфлоу.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="tag" style="background:var(--teal-bg);color:var(--teal-text)"&gt;Parenting&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-title"&gt;Воронка Parenting&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-body"&gt;Керував однією з найбільших та найскладніших воронок. Стабільна якість та дедлайни навіть у пікові періоди.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="col-title"&gt;&lt;span class="col-dot" style="background:#7F77DD"&gt;&lt;/span&gt;Продукт &amp; Ініціативи&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="tag" style="background:var(--purple-bg);color:var(--purple-text)"&gt;Product&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-title"&gt;Creobuilder&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-body"&gt;Участь у розробці: логіка файлів, активне тестування командою та збір зворотного зв'язку для ітерацій.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="tag" style="background:var(--green-bg);color:var(--green-text)"&gt;Тест&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-title"&gt;Freepik Space &amp; Прототипи&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-body"&gt;Ініціював тест Freepik Space та систему прототипів SuperHigh / High / Medium. Постійний потік дрібних покращень.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div id="roadmap" class="tab-panel"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="roadmap-grid"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="rcard"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="rcard-icon"&gt;⚡&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="rcard-title"&gt;Автоматизація PQ Score&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="rcard-desc"&gt;Повна автоматизація через API з підсвічуванням критичних помилок — без ручної перевірки.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;ul class="rcard-list"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;API-інтеграція для оцінки якості креативів&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;Автоматичні алерти при критичних помилках&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;Мінімізація ручної перевірки&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="rcard"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="rcard-icon"&gt;🌱&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="rcard-title"&gt;Масштабування ініціатив&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="rcard-desc"&gt;Всі учасники команди мають власні ініціативи — підтримати momentum і виростити сеньорів.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;ul class="rcard-list"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;Культура ініціативності: keep going&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;Менторство та зростання сеньорів&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;Регулярне ревью прогресу&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="rcard"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="rcard-icon"&gt;🔧&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="rcard-title"&gt;Усунення «стоперів»&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="rcard-desc"&gt;Пошук і ліквідація зон, що гальмують команду. Перший приклад — проєкт Short Drama.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;ul class="rcard-list"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;Short Drama: зручне тегування кадрів&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;Заміна неефективних Figma-бордів&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;Швидкий пошук контенту за тегами&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="rcard"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="rcard-icon"&gt;📚&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="rcard-title"&gt;Навчання &amp; Нетворкінг&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="rcard-desc"&gt;Воркшопи для лідів та обмін досвідом з суміжними бізнесами.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;ul class="rcard-list"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;Practical hiring workshop for Leads&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;Бенчмаркінг кращих практик ринку&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;Обмін досвідом з Pawchamp, Brighterly, Habit One&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;footer class="footer"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="footer-left"&gt;Performance Review · 7 місяців ретроспектива&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="footer-right"&gt;2025 – 2026&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/footer&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>function switchTab(id, btn) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.tab-panel').forEach(p =&gt; p.classList.remove('active'));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.tab-btn').forEach(b =&gt; b.classList.remove('active'));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.getElementById(id).classList.add('active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>btn.classList.add('active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
